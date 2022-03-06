@@ -28,11 +28,11 @@ class Calculations
     public static List<List<double>> GetAllPossibleNumbers(List<double> inputNumbers)
     {
         List<List<double>> result = new();
-        foreach (List<double> allPossibleSingleElementNumbersWithoutNegatives in GetAllPossibleSingleElementNumbersWithoutInverse(inputNumbers, new List<double>()))
+        foreach (List<double> allPossibleSingleElementNumbersWithoutInverse in GetAllPossibleSingleElementNumbersWithoutInverse(inputNumbers, new List<double>()))
         {
-            foreach (List<double> allPossibleMultiElementNumbersWithoutNegatives in GetAllPossibleMultiElementNumbersWithoutInverse(allPossibleSingleElementNumbersWithoutNegatives.Take(1).ToList(), allPossibleSingleElementNumbersWithoutNegatives.Skip(1).ToList()))
+            foreach (List<double> allPossibleMultiElementNumbersWithoutInverse in GetAllPossibleMultiElementNumbersWithoutInverse(allPossibleSingleElementNumbersWithoutInverse.Take(1).ToList(), allPossibleSingleElementNumbersWithoutInverse.Skip(1).ToList()))
             {
-                result = result.Concat(GetAllPossibleMultiElementNumbersWithInverse(new List<double>(), allPossibleMultiElementNumbersWithoutNegatives)).ToList();
+                result = result.Concat(GetAllPossibleMultiElementNumbersWithInverse(new List<double>(), allPossibleMultiElementNumbersWithoutInverse)).ToList();
             }
         }
         return result;
