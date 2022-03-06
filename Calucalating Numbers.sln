@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calucalating Numbers", "Calucalating Numbers.csproj", "{B710F5DA-1C0D-4978-9BC2-4626FF37780B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B710F5DA-1C0D-4978-9BC2-4626FF37780B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B710F5DA-1C0D-4978-9BC2-4626FF37780B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B710F5DA-1C0D-4978-9BC2-4626FF37780B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B710F5DA-1C0D-4978-9BC2-4626FF37780B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {099CF16A-38F0-4BA1-8ED2-1390A11EB200}
+	EndGlobalSection
+EndGlobal
